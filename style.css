@@ -30,11 +30,17 @@ header .title{
 
 }
 .demos{
-    display: grid;
-    grid-template-columns: 4fr 4fr 4fr;
-    row-gap: 2rem;
-    column-gap: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
     margin-top: 3rem;
+}
+.demos div{
+    width: 29%;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
+    box-shadow: 0px 0px 10px gray;
+    transition: 300ms;
 }
 .demos img{
     width: 100%;
@@ -44,11 +50,7 @@ header .title{
     color: gray;
     padding-top: 1rem;
 }
-.demos div{
-    padding: 0.5rem 0.5rem 0rem 0.5rem;
-    box-shadow: 0px 0px 10px gray;
-    transition: 300ms;
-}
+
 .demos div:hover{
     transform: translateY(-10px);
     transition: 300ms;
@@ -138,10 +140,8 @@ footer img{
     .wixizo-text div{
         width: 100%;
     }
-    .demos{
-        display: flex;
-        flex-direction: column;
-        row-gap: 2rem;
+    .demos div{
+        width: 90%;
     }
     .part-2{
         margin: 1rem;
@@ -175,7 +175,7 @@ footer img{
     }
     .grid-img,.new-feature{
         margin-top: 2rem;
-        padding: 2rem;
+        padding: 1rem;
     }
     .part-2{
         margin: 4rem 2rem 3rem 2rem;
